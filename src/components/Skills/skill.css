@@ -1,0 +1,122 @@
+#skillPage{
+    overflow: hidden;
+    width: 100vw;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.skillTitle{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.skillDesc{
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 0 2rem;
+    max-width: 90%;
+}
+
+/* .skills{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 80%;
+    height: 800px;
+} */
+.head1{
+    margin-top: 1.5rem;
+}
+
+.techSkills{
+    display: flex;
+    max-width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skillBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1.5rem;
+    margin: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    background: #001524;
+    width: 100vw;
+    max-width: 15rem;
+
+}
+
+.skillBar:hover{
+    box-shadow: 3px 3px 3px #FE6F01;
+    transform: scale(1.1);
+}
+
+.skillBar>i{
+    font-size: 4rem;
+}
+
+.softSkills{
+    display: flex;
+    max-width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.softSkillBar>i{
+    font-size: 2rem;
+}
+.softSkillBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    margin: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    background: #001524;
+    width: 100vw;
+    max-width: 15rem;
+}
+
+.softSkillBar:hover{
+    box-shadow: 3px 3px 3px #FE6F01;
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width:900px) {
+    .softSkillBar{
+        width: 48vw;
+    }
+    .skillBar{
+        width: 48vw;
+    }
+}
+
+/* @media screen and (min-width:1200px) {
+    .softSkillBar{
+        width: 48vw;
+    }
+    .skillBar{
+        width: 48vw;
+    }
+} */
+
+@media screen and (max-width:480px) {
+    .softSkillBar>i{
+        font-size: 2rem;
+    }
+    .skillBar>i{
+        font-size: 2rem;
+    }
+
+}
